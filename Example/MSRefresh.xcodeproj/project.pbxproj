@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		476FAE09F3DA5A48A142DC2A /* MSRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSRefresh.podspec; path = ../MSRefresh.podspec; sourceTree = "<group>"; };
+		476FAE09F3DA5A48A142DC2A /* MSRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSRefresh.podspec; path = ../MSRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5CED474AF5BDC2669EA68029 /* Pods_MSRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MSRefresh_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSRefresh_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,8 +62,8 @@
 		77AB7DB60061F411D946FF87 /* Pods-MSRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRefresh_Example.debug.xcconfig"; path = "Target Support Files/Pods-MSRefresh_Example/Pods-MSRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9987956FF31D88156326E4E1 /* Pods_MSRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CECF86B57A76FF7FFFE782F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D03CADC3D5ADDA7E4E827850 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9CECF86B57A76FF7FFFE782F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D03CADC3D5ADDA7E4E827850 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D1852864D79C79C9EC62FC02 /* Pods-MSRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRefresh_Tests.release.xcconfig"; path = "Target Support Files/Pods-MSRefresh_Tests/Pods-MSRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EA27EC3C04BD731023347EB1 /* Pods-MSRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRefresh_Example.release.xcconfig"; path = "Target Support Files/Pods-MSRefresh_Example/Pods-MSRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EDDF6956789101935AE9A960 /* Pods-MSRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRefresh_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MSRefresh_Tests/Pods-MSRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				EDDF6956789101935AE9A960 /* Pods-MSRefresh_Tests.debug.xcconfig */,
 				D1852864D79C79C9EC62FC02 /* Pods-MSRefresh_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MSRefresh_Example/Pods-MSRefresh_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/MSRefresh/MSRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

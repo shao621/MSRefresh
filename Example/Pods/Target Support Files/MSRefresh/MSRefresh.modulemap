@@ -1,0 +1,6 @@
+framework module MSRefresh {
+  umbrella header "MSRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

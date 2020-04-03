@@ -1,0 +1,23 @@
+PODS:
+  - MJRefresh (3.3.1)
+  - MSRefresh (0.1.0):
+    - MJRefresh (~> 3.3.1)
+
+DEPENDENCIES:
+  - MSRefresh (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  MSRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MSRefresh: 2f857c3cdf3a3dd79931cd284402d6fde5c3a07b
+
+PODFILE CHECKSUM: db0d6e9ba1e25ded7f0a9722d4ce5b28ff4ff3e1
+
+COCOAPODS: 1.8.4
